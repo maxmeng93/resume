@@ -1,0 +1,23 @@
+.titleBox {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.icon {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: rgb(37, 70, 101);
+}
+
+.title {
+  margin-bottom: 20px;
+  flex: 1;
+  height: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(37, 70, 101);
+  border-bottom: 1px solid rgb(37, 70, 101);
+}

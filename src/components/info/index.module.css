@@ -1,0 +1,35 @@
+.info {
+  height: 180px;
+}
+
+.name {
+  margin: 0 0 16px 0;
+  height: 36px;
+  line-height: 36px;
+  font-size: 30px;
+  font-weight: 400;
+  color: rgb(37, 70, 101);
+}
+
+.word {
+  font-size: 14px;
+}
+
+.baseInfo {
+  height: 34px;
+  color: #747474;
+}
+
+.baseInfoItem {
+  font-size: 14px;
+  height: 16px;
+  line-height: 16px;
+  display: inline-block;
+  padding-right: 8px;
+  margin-right: 8px;
+  border-right: 2px solid #b4b4b4;
+}
+
+.baseInfoItem:last-child{
+  border: none;
+}
