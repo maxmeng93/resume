@@ -1,9 +1,9 @@
 import React from 'react';
 import ModuleItem from '../module_item';
 
-function JobPreference(props) {
+function Summary(props) {
   let titleInfo = {
-    title: '求职意向',
+    title: '自我评价',
     icon: '',
   }
 
@@ -14,4 +14,4 @@ function JobPreference(props) {
   );
 }
 
-export default JobPreference;
+export default Summary;
