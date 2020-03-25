@@ -1,0 +1,19 @@
+.workItem {
+  margin-top: 18px;
+}
+
+.workItem:first-child {
+  margin-top: 0;
+}
+
+.workItemTitle {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #666;
+}
+
+.workItemDetails {
+  font-size: 14px;
+  color: #747474;
+}

@@ -1,9 +1,10 @@
 import React from 'react';
 import Title from '../title';
+import styles from './index.module.css';
 
 function ModuleItem(props) {
   return (
-    <div>
+    <div className={styles.box}>
       <Title {...props.titleInfo}></Title>
       {props.children}
     </div>

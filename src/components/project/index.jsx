@@ -8,9 +8,11 @@ function Project(props) {
   }
 
   return (
-    <div>
-      <ModuleItem titleInfo={titleInfo} />
-    </div>
+    <ModuleItem titleInfo={titleInfo}>
+      <div>
+        123
+      </div>
+    </ModuleItem>
   );
 }
 
