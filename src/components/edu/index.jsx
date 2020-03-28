@@ -9,12 +9,7 @@ function Edu(props) {
   }
 
   return (
-    <ModuleItem titleInfo={titleInfo}>
-      {/* <div className="between-justify">
-        <span>2011.9-2014.7</span>
-        <span>太原旅游职业学院</span>
-        <span>酒店管理</span>
-      </div> */}
+    <ModuleItem {...titleInfo}>
       <List list={props.edus} />
     </ModuleItem>
   );

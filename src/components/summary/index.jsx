@@ -8,11 +8,9 @@ function Summary(props) {
   }
 
   return (
-    <div>
-      <ModuleItem titleInfo={titleInfo}>
-        <p>{props.summary}</p>
-      </ModuleItem>
-    </div>
+    <ModuleItem {...titleInfo}>
+      <p>{props.summary}</p>
+    </ModuleItem>
   );
 }
 

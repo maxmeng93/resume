@@ -10,7 +10,7 @@ function JobIntention(props) {
   }
 
   return (
-    <ModuleItem titleInfo={titleInfo}>
+    <ModuleItem {...titleInfo}>
       <div className={classnames('between-justify', styles.inteCon)}>
         <span>{props.post}</span>
         <span>{props.city}</span>

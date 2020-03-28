@@ -1,18 +1,17 @@
 import React from 'react';
 import ModuleItem from '../module_item';
-import List from '../list';
 
-function Work(props) {
+function Skill(props) {
   const titleInfo = {
-    title: '工作经验',
+    title: '技能特长',
     icon: '',
   }
 
   return (
     <ModuleItem {...titleInfo}>
-      <List list={props.works} />
+      <p>{props.summary}</p>
     </ModuleItem>
   );
 }
 
-export default Work;
+export default Skill;

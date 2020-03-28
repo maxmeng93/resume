@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Info from './components/info';
 import JobIntention from './components/job_intention';
+import Skill from './components/skill';
 import Work from './components/work';
 import Project from './components/project';
 import Edu from './components/edu';
@@ -23,6 +24,7 @@ let data = {
     pay: '20K',
     arrivalTime: '一个月内到岗',
   },
+  skills: [],
   // 工作经验
   works: [
     {
@@ -99,6 +101,7 @@ function App() {
       <div className="a4">
         <Info />
         <JobIntention {...data.jobIntention} />
+        <Skill skills={data.skills} />
         <Work works={data.works} />
         <Project projects={data.projects} />
         <Edu edus={data.edus} />
