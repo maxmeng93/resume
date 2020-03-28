@@ -1,17 +1,16 @@
 import React from 'react';
 import ModuleItem from '../module_item';
+import List from '../list';
 
 function Project(props) {
-  let titleInfo = {
+  const titleInfo = {
     title: '项目经验',
     icon: '',
   }
 
   return (
     <ModuleItem titleInfo={titleInfo}>
-      <div>
-        123
-      </div>
+      <List list={props.projects} />
     </ModuleItem>
   );
 }

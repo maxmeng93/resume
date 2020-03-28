@@ -4,7 +4,7 @@ import styles from './index.module.css';
 function Title(props) {
   return (
     <div className={styles.titleBox}>
-      <i className={styles.icon}></i>
+      <div className={styles.icon}>&nbsp;</div>
       <div className={styles.title}>{props.title}</div>
     </div>
   );

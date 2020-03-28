@@ -3,6 +3,7 @@
   margin: 30px auto;
   padding: 30px 35px;
   width: 210mm;
-  height: 297mm;
+  min-width: 210mm;
+  /* height: 297mm; */
   background-color: #fff;
 }
