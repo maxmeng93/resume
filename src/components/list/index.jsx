@@ -3,12 +3,14 @@ import styles from './index.module.css';
 import ListItem from '../list_item';
 
 function List(props) {
+  const { type, list } = props;
+
   return (
     <ul>
       { 
-        props.list.map((item, index) => 
+        list.map((item, index) => 
           <li className={styles.item} key={index}>
-            <ListItem data={item} />
+            <ListItem data={item} type={type} />
           </li>
         ) 
       }

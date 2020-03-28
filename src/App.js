@@ -13,9 +13,10 @@ let data = {
   info: {
     name: '孟禹丞',
     age: '27岁',
+    experience: '5年经验',
     mobile: '18735812924',
     email: 'maxmeng93@gmail.com',
-    describe: '5年前端开发经验，2年前端负责人。',
+    describe: '5年前端开发经验，2年前端负责人',
   },
   // 求职意向
   jobIntention: {
@@ -76,10 +77,72 @@ let data = {
   projects: [
     {
       titles: [
-        'BBI集团官网'
+        '魔方系统',
+        '生工生物工程（上海）股份有限公司',
+      ],
+      details: [
+        '魔方系统是集团内大中台系统',
+      ],
+    },
+    {
+      titles: [
+        '生工新电商系统',
+        '生工生物工程（上海）股份有限公司',
       ],
       details: '',
-    }
+    },
+    {
+      titles: [
+        '生产执行管理系统',
+        '生工生物工程（上海）股份有限公司',
+      ],
+      details: [
+        '生产执行管理系统(MES)内对接了公司的生产销售流程。系统内原有销售管理、合成管理、基因合成、测序管理、审批管理、快递管理、系统管理等7个子项目',
+        '工作职能',
+      ]
+    },
+    {
+      titles: [
+        '采购管理',
+        '生工生物工程（上海）股份有限公司',
+      ],
+      details: '',
+    },
+    {
+      titles: [
+        '测序管理',
+        '生工生物工程（上海）股份有限公司',
+      ],
+      details: '',
+    },
+    {
+      titles: [
+        '多肽合成管理',
+        '生工生物工程（上海）股份有限公司',
+      ],
+      details: '',
+    },
+    {
+      titles: [
+        'BBI集团官网',
+        '生工生物工程（上海）股份有限公司',
+      ],
+      details: '',
+    },
+    {
+      titles: [
+        'BBI集团员工自助系统-web版',
+        '生工生物工程（上海）股份有限公司',
+      ],
+      details: '',
+    },
+    {
+      titles: [
+        'BBI集团员工自助系统-小程序版',
+        '生工生物工程（上海）股份有限公司',
+      ],
+      details: '',
+    },
   ],
   // 教育背景
   edus: [
@@ -99,7 +162,7 @@ function App() {
   return (
     <div className="App">
       <div className="a4">
-        <Info />
+        <Info {...data.info} />
         <JobIntention {...data.jobIntention} />
         <Skill skills={data.skills} />
         <Work works={data.works} />

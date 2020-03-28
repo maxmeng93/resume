@@ -10,7 +10,7 @@ function Project(props) {
 
   return (
     <ModuleItem {...titleInfo}>
-      <List list={props.projects} />
+      <List list={props.projects} type="project" />
     </ModuleItem>
   );
 }
