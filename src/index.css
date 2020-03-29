@@ -4,7 +4,7 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif; */
   font-family: "Microsoft YaHei";
-  background-color: #e9ecef;
+  /* background-color: #e9ecef; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -50,4 +50,17 @@ li {
 .iconfont_jobIntention {
   margin-right: 5px;
   vertical-align: middle;
+}
+
+a:link {
+  color: #6659c3;
+}
+a:visited {
+  color: #6659c3;
+}
+a:hover {
+  color: #6659c3;
+}
+a:active {
+  color: #6659c3;
 }
