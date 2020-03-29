@@ -7,6 +7,7 @@ import Work from './components/work';
 import Project from './components/project';
 import Edu from './components/edu';
 import Summary from './components/summary';
+import Homepage from './components/homepage';
 
 let data = {
   // 基础信息
@@ -26,7 +27,10 @@ let data = {
     arrivalTime: '一个月内到岗',
   },
   skills: [
-    '熟练使用React'
+    '熟练使用React技术栈，如React、Redux、Redux-saga、dvajs、antd等',
+    '也使用Vue、Vuex、Nuxtjs开发过多语言服务端渲染的网站',
+    '了解微信小程序，并有实际开发经验',
+    '熟悉 Git Flow 工作流程',
   ],
   // 工作经验
   works: [
@@ -160,6 +164,16 @@ let data = {
     }
   ],
   summary: '具有大型前端系统开发和框架设计经验，精通页面架构布局和PC端、移动端适配。自我驱动，代码洁癖，良好的编程能力和编程习惯，良好的学习能力。具备良好的团队合作精神，能利用自身技术能力提升团队整体研发效率。',
+  homepage: [
+    {
+      title: '个人网站',
+      href: 'https://www.maxmeng.top'
+    },
+    {
+      title: 'GitHub',
+      href: 'https://github.com/maxmeng93'
+    }
+  ],
 };
 
 function App() {
@@ -174,6 +188,7 @@ function App() {
         <Project projects={data.projects} />
         <Edu edus={data.edus} />
         <Summary summary={data.summary} />
+        <Homepage list={data.homepage} />
       </div>
     </div>
   );
