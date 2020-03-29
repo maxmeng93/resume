@@ -10,7 +10,7 @@ function List(props) {
       { 
         list.map((item, index) => 
           <li className={styles.item} key={index}>
-            <ListItem data={item} type={type} />
+            <ListItem {...item} type={type} />
           </li>
         ) 
       }

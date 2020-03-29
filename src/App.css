@@ -1,9 +1,26 @@
 .a4 {
   box-sizing: border-box;
-  margin: 30px auto;
+  /* margin: 30px auto; */
+  margin: 0 auto;
   padding: 30px 35px;
   width: 210mm;
   min-width: 210mm;
   /* height: 297mm; */
+  background-color: #fff;
+}
+
+.decorate {
+  position: relative;
+  margin: -10px -35px 20px -35px;
+  height: 30px;
+  background-color: #254665;
+}
+
+.decorate::before {
+  content: "";
+  position: absolute;
+  left: 50px;
+  width: 10px;
+  height: 100%;
   background-color: #fff;
 }

@@ -1,16 +1,17 @@
 import React from 'react';
 import classnames from 'classnames';
+import PropTypes from 'prop-types';
 import styles from './index.module.css';
 
 function ListItem(props) {
-  const { data, type } = props;
+  const { titles, details, type } = props;
   
   // 项目
   function renderProject() {
     return (
       <div className={styles.itemDetails}>
-        <p style={{'textIndent': '2em'}}><strong>项目描述：</strong>{data.details[0]}</p>
-        <p style={{'textIndent': '2em'}}><strong>工作职能：</strong>{data.details[1]}</p>
+        <p style={{'textIndent': '2em'}}><strong>项目描述：</strong>{details[0]}</p>
+        <p style={{'textIndent': '2em'}}><strong>工作职能：</strong>{details[1]}</p>
       </div>
     );
   }
@@ -19,25 +20,47 @@ function ListItem(props) {
     if (type === 'project') {
       return renderProject();
     }
-    return (
-      <ul className={styles.itemDetails}>
-        { 
-          Array.isArray(data.details) ? 
-          data.details.map((e, i) => <li key={i}>{i+1}）{e}</li>) : 
-          <li>{data.details}</li> 
-        }
-      </ul>
-    );
+    if (Array.isArray(details)) {
+      return (
+        <ul className={styles.itemDetails}>
+          { details.map((e, i) => <li key={i}>{i+1}）{e}</li>) }
+        </ul>
+      );
+    }
+    if (typeof details === 'string') {
+      return (
+        <p className={styles.itemDetails}>{details}</p>
+      );
+    }
+    return null;
+  }
+
+  function renderTitle() {
+    if (titles) {
+      return (
+        <div className={classnames('between-justify', styles.itemTitle)}>
+          { titles.map((e, i) => (<span key={i}>{e}</span>)) }
+        </div>
+      )
+    }
+    return null;
   }
 
   return (
     <>
-      <div className={classnames('between-justify', styles.itemTitle)}>
-        { data.titles.map((e, i) => (<span key={i}>{e}</span>)) }
-      </div>
+      { renderTitle() }
       { renderDetail() }
     </>
   );
 }
+
+ListItem.propTypes = {
+  titles: PropTypes.array, 
+  details: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.string,
+  ]), 
+  type: PropTypes.string,
+};
 
 export default ListItem;

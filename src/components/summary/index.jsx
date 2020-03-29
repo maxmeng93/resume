@@ -1,5 +1,6 @@
 import React from 'react';
 import ModuleItem from '../module_item';
+import ListItem from '../list_item';
 
 function Summary(props) {
   const titleInfo = {
@@ -9,7 +10,7 @@ function Summary(props) {
 
   return (
     <ModuleItem {...titleInfo}>
-      <p>{props.summary}</p>
+      <ListItem details={props.summary} />
     </ModuleItem>
   );
 }

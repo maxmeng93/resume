@@ -9,8 +9,8 @@ function Info(props) {
       <div className={styles.baseInfo}>
         <span className={styles.baseInfoItem}>{props.age}</span>
         <span className={styles.baseInfoItem}>{props.experience}</span>
-        <span className={styles.baseInfoItem}>{props.mobile}</span>
-        <span className={styles.baseInfoItem}>{props.email}</span>
+        <span className={styles.baseInfoItem}><a href={`tel:${props.mobile}`}>{props.mobile}</a></span>
+        <span className={styles.baseInfoItem}><a href={'mailto:' + props.email}>{props.email}</a></span>
       </div>
     </div>
   );
