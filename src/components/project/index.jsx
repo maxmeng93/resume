@@ -8,9 +8,9 @@ function Project(props) {
     icon: '',
   }
   
-  const projects = props.projects.map(item => {
+  const projects = props.projects.map((item, index) => {
     return {
-      titles: [item.title, item.company],
+      titles: [`${index+1}、${item.title}`, item.company],
       details: item.details,
     };
   });
