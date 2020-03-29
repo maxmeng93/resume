@@ -178,7 +178,7 @@ let data = {
     },
     {
       title: '线上简历',
-      href: '',
+      href: 'https://www.maxmeng.top/resume/build',
     }
   ],
 };
