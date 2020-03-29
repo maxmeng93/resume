@@ -15,7 +15,7 @@ function Homepage(props) {
           props.list.map((item, i) => (
             <li className={styles.item} key={i}>
               <strong>{item.title}</strong>
-              <a href={item.href} target="_blank">{item.href}</a>
+              <a href={item.href} target="_blank" rel="noopener noreferrer">{item.href}</a>
             </li>
           ))
         }

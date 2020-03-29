@@ -9,9 +9,9 @@ function ListItem(props) {
   // 项目
   function renderProject() {
     return (
-      <div className={styles.itemDetails}>
-        <p style={{'textIndent': '2em'}}><strong>项目描述：</strong>{details[0]}</p>
-        <p style={{'textIndent': '2em'}}><strong>工作职能：</strong>{details[1]}</p>
+      <div className={classnames(styles.itemDetails, styles.projectDetails)}>
+        <p><strong>项目描述：</strong>{details[0]}</p>
+        <p><strong>工作职能：</strong>{details[1]}</p>
       </div>
     );
   }

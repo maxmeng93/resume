@@ -7,10 +7,17 @@ function Project(props) {
     title: '项目经验',
     icon: '',
   }
+  
+  const projects = props.projects.map(item => {
+    return {
+      titles: [item.title, item.company],
+      details: item.details,
+    };
+  });
 
   return (
     <ModuleItem {...titleInfo}>
-      <List list={props.projects} type="project" />
+      <List list={projects} type="project" />
     </ModuleItem>
   );
 }

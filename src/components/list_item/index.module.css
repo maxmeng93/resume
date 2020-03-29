@@ -17,3 +17,8 @@
   font-size: 14px;
   color: #747474;
 }
+
+.projectDetails p{
+  margin: 0;
+  text-indent: 2em;
+}
