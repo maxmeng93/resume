@@ -5,7 +5,7 @@ import List from '../list';
 function Project(props) {
   const titleInfo = {
     title: '项目经验',
-    icon: '',
+    icon: <i className="iconfont" style={{fontSize: 16}}>&#xe62e;</i>,
   }
   
   const projects = props.projects.map((item, index) => {

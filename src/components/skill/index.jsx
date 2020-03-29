@@ -5,7 +5,7 @@ import ListItem from '../list_item';
 function Skill(props) {
   const titleInfo = {
     title: '专业技能',
-    icon: '',
+    icon: <i className="iconfont" style={{fontSize: 24}}>&#xe69a;</i>,
   }
 
   return (

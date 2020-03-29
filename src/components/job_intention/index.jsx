@@ -6,7 +6,7 @@ import classnames from 'classnames';
 function JobIntention(props) {
   const titleInfo = {
     title: '求职意向',
-    icon: '',
+    icon: <i className="iconfont" style={{fontSize: 24}}>&#xe69d;</i>,
   }
 
   return (

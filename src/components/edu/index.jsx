@@ -5,7 +5,7 @@ import List from '../list';
 function Edu(props) {
   const titleInfo = {
     title: '教育背景',
-    icon: '',
+    icon: <i className="iconfont" style={{fontSize: 28}}>&#xe637;</i>,
   }
 
   return (
